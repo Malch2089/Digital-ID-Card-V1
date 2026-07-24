@@ -1,0 +1,111 @@
+** Drc report for Digital ID Card pcb.kicad_pcb **
+** Created on 2026-07-21T02:04:27+0530 **
+
+** Found 19 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(67.0000 mm, 24.0000 mm): Rectangle on Edge.Cuts
+    @(66.9550 mm, 61.0000 mm): Reference field of J2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Resistor_SMD'.
+    Local override; warning
+    @(72.0875 mm, 53.0000 mm): Footprint R1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Espressif'.
+    Local override; warning
+    @(91.9750 mm, 34.3500 mm): Footprint U3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Connector_USB'.
+    Local override; warning
+    @(72.6000 mm, 61.0000 mm): Footprint J2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Button_Switch_SMD'.
+    Local override; warning
+    @(71.8500 mm, 44.9000 mm): Footprint reset1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Connector_PinHeader_2.54mm'.
+    Local override; warning
+    @(70.0000 mm, 93.0000 mm): Footprint J1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'.
+    Local override; warning
+    @(95.0000 mm, 68.0000 mm): Footprint C3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Resistor_SMD'.
+    Local override; warning
+    @(83.0000 mm, 58.0500 mm): Footprint R2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Resistor_SMD'.
+    Local override; warning
+    @(70.0000 mm, 27.0000 mm): Footprint R5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Button_Switch_SMD'.
+    Local override; warning
+    @(71.8500 mm, 37.8500 mm): Footprint boot1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(90.0000 mm, 62.0000 mm): Footprint U2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Connector_PinHeader_2.54mm'.
+    Local override; warning
+    @(114.2500 mm, 43.7100 mm): Footprint E-ink_display1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Package_TO_SOT_SMD'.
+    Local override; warning
+    @(90.1375 mm, 67.9500 mm): Footprint U1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Resistor_SMD'.
+    Local override; warning
+    @(78.9125 mm, 45.0000 mm): Footprint R4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Resistor_SMD'.
+    Local override; warning
+    @(95.0000 mm, 62.0000 mm): Footprint R3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'.
+    Local override; warning
+    @(90.0000 mm, 57.0000 mm): Footprint C2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'.
+    Local override; warning
+    @(87.0500 mm, 53.0000 mm): Footprint C1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.9125 mm, 62.0000 mm): Reference field of R3
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(71.8500 mm, 41.1500 mm): Reference field of reset1
+    @(70.6000 mm, 40.6000 mm): Segment of boot1 on F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 14 Footprint errors **
+[net_conflict]: Pad net (Net-(J2-VBUS-PadA4)) doesn't match net given by schematic (Net-(U2-V_{DD})).
+    Local override; warning
+    @(68.5550 mm, 63.4500 mm): Pad A4 [Net-(J2-VBUS-PadA4)] of J2 on F.Cu
+[net_conflict]: Pad net (Net-(J2-VBUS-PadA4)) doesn't match net given by schematic (Net-(U2-V_{DD})).
+    Local override; warning
+    @(68.5550 mm, 58.5500 mm): Pad A9 [Net-(J2-VBUS-PadA4)] of J2 on F.Cu
+[net_conflict]: Pad net (Net-(J2-VBUS-PadA4)) doesn't match net given by schematic (Net-(U2-V_{DD})).
+    Local override; warning
+    @(68.5550 mm, 58.5500 mm): Pad B4 [Net-(J2-VBUS-PadA4)] of J2 on F.Cu
+[net_conflict]: Pad net (Net-(J2-VBUS-PadA4)) doesn't match net given by schematic (Net-(U2-V_{DD})).
+    Local override; warning
+    @(68.5550 mm, 63.4500 mm): Pad B9 [Net-(J2-VBUS-PadA4)] of J2 on F.Cu
+[footprint_symbol_mismatch]: Value (U2) doesn't match symbol value (MCP73831-2-MC).
+    Local override; warning
+    @(90.0000 mm, 62.0000 mm): Footprint U2
+[net_conflict]: Pad net (Net-(J2-VBUS-PadA4)) doesn't match net given by schematic (unconnected-(U2-STAT-Pad1)).
+    Local override; warning
+    @(91.1375 mm, 62.9500 mm): Pad 1 [Net-(J2-VBUS-PadA4)] of U2 on F.Cu
+[net_conflict]: Pad net (Net-(J2-VBUS-PadA4)) doesn't match net given by schematic (GND).
+    Local override; warning
+    @(91.1375 mm, 62.0000 mm): Pad 2 [Net-(J2-VBUS-PadA4)] of U2 on F.Cu
+[net_conflict]: Pad net (Net-(J1-Pin_1)) doesn't match net given by schematic (Net-(U2-V_{DD})).
+    Local override; warning
+    @(88.8625 mm, 61.0500 mm): Pad 4 [Net-(J1-Pin_1)] of U2 on F.Cu
+[net_conflict]: Pad net (unconnected-(U2-STAT-Pad5)) doesn't match net given by schematic (Net-(U2-PROG)).
+    Local override; warning
+    @(88.8625 mm, 62.9500 mm): Pad 5 [unconnected-(U2-STAT-Pad5)] of U2 on F.Cu
+[net_conflict]: Pad missing net given by schematic (unconnected-(U3-GPIO21{slash}U0TXD-Pad31)).
+    Local override; warning
+    @(97.8750 mm, 36.2500 mm): Pad 31 [<no net>] of U3 on F.Cu
+[net_conflict]: Pad missing net given by schematic (unconnected-(U3-NC-Pad32)).
+    Local override; warning
+    @(97.8750 mm, 35.4500 mm): Pad 32 [<no net>] of U3 on F.Cu
+[net_conflict]: Pad missing net given by schematic (unconnected-(U3-NC-Pad33)).
+    Local override; warning
+    @(97.8750 mm, 34.6500 mm): Pad 33 [<no net>] of U3 on F.Cu
+[net_conflict]: Pad missing net given by schematic (unconnected-(U3-NC-Pad34)).
+    Local override; warning
+    @(97.8750 mm, 33.8500 mm): Pad 34 [<no net>] of U3 on F.Cu
+[net_conflict]: Pad missing net given by schematic (unconnected-(U3-NC-Pad35)).
+    Local override; warning
+    @(97.8750 mm, 33.0500 mm): Pad 35 [<no net>] of U3 on F.Cu
+
+** End of Report **
