@@ -4,27 +4,9 @@
 
 # Digital ID Card V1
 
-A custom-built, battery-powered smart ID card built around an ESP32-C3 and an E-ink display. The card is USB-C rechargeable and designed to replace multiple physical cards with one reprogrammable device.
+Imagine 10 years from now you got lucky and a trillionaire gave you his business card it won't be an ordinary one, it's as thick as a debit-card with an e-ink display featuring all his details. But since this project costed me around $45 to make so don't expect any business man could afford it, it's just a cool concept.
 
-## What It Is
-
-This project is a credit-card-sized electronic badge with its own custom PCB and a 3D-printed enclosure. At its core is an ESP32-C3-MINI-1 microcontroller driving a low-power E-ink (e-paper) display, with an onboard LiPo battery charged over USB-C.
-
-The card has two main use cases:
-
-1. **Digital business card** – displays your name, role, contact details, or a QR code, and can be updated wirelessly instead of reprinting a new card every time your information changes.
-2. **All-in-one ID wallet** – stores multiple identity/access cards (e.g. work badge, student ID, membership cards) on a single device, with the display cycling between them so you only need to carry one card instead of several.
-
-An E-ink display was chosen over a standard LCD/OLED screen because it only draws power when the image actually changes, holds its image with zero power once drawn, and stays readable in direct sunlight — all of which make it well suited to something that needs to sit in a wallet or on a lanyard for days at a time on a small battery.
-
-## Why I Made It
-
-Carrying around a stack of physical ID cards, badges, and business cards is inconvenient, and most of them can't be updated once printed. The goal of this project was to build a single reprogrammable card that:
-
-- Reduces the number of physical cards someone needs to carry
-- Can be updated instantly (new job title, new contact info, new access card) without reprinting anything
-- Runs for an extended period on a small rechargeable battery thanks to the E-ink display
-- Demonstrates a complete, real hardware build — schematic, custom PCB, firmware, and a 3D-printed case — as a personal embedded systems / PCB design project
+I also planned one more use but that will not work if this is launched as a product. The other use is feeding all your id cards like adhar, pan, voter in one single card.  
 
 ## Hardware Overview
 
