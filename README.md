@@ -35,25 +35,25 @@ Digital-ID-Card-V1/
 
 This BOM reflects the components placed on the current PCB revision, extracted directly from the KiCad schematic.
 
-| Ref. Designator(s) | Component | Value / Part Number | Footprint / Package | Qty | Function |
-|---|---|---|---|---|---|
-| U3 | Microcontroller | ESP32-C3-MINI-1 (Espressif) | ESP32-C3-MINI-1 module | 1 | Main processor, Wi-Fi/BLE, drives the E-ink display |
-| U2 | Battery charge controller | MCP73831T-2-OT | SOT-23-5 | 1 | Charges the LiPo battery from USB-C |
-| U1 | Voltage regulator | AP2112K-3.3 | SOT-23-5 | 1 | Regulates supply down to 3.3V for the ESP32-C3 |
-| J2 | USB connector | USB-C receptacle (USB 2.0, 14-pin) | USB-C SMD receptacle | 1 | Power input / charging / programming |
-| J1 | Battery connector | 2-pin JST/header (LiPo battery) | 2.54mm pin header, 1x02 | 1 | Connects to LiPo battery pack |
-| E-ink_display1 | Display connector | 8-pin header (generic SPI e-paper) | 2.54mm pin header, 1x08 | 1 | Connects to E-ink display module |
-| boot1, reset1 | Push buttons | SW_Push | SMD tactile switch (SW_SPST_TL3342) | 2 | Boot mode select and reset for ESP32-C3 |
-| R1, R2 | Resistor | 5.1 kΩ | 0805 SMD | 2 | USB-C CC line pull-downs (configures as device) |
-| R3, R4, R5 | Resistor | 10 kΩ | 0805 SMD | 3 | Pull-up/pull-down resistors (boot/reset/strapping) |
-| C1, C2, C3 | Capacitor | 10 µF | 0805 SMD | 3 | Power supply decoupling/filtering |
+| Ref. Designator(s) | Component | Value / Part Number | Footprint / Package | Qty | Function | Links |
+|---|---|---|---|---|---|---|
+| U3 | Microcontroller | ESP32-C3-MINI-1 (Espressif) | ESP32-C3-MINI-1 module | 1 | Main processor, Wi-Fi/BLE, drives the E-ink display | https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.html |
+| U2 | Battery charge controller | MCP73831T-2-OT | SOT-23-5 | 1 | Charges the LiPo battery from USB-C | https://www.onlinecomponents.com/en/productdetail/microchip-technology/mcp73831t2aciot-44791170.html?utm_campaign=searchads360feed&utm_content=instock&utm_term=MCP73831T-2ACI2FOT&&msclkid=59ce51ac125613cdf9c33bd5dda60918&utm_source=bing&utm_medium=cpc&utm_campaign=Tier1_Bing_INTL_Integrated%20Circuits%20-%20ICs&utm_term=battery%20management%20mcp73831t-2aci%2Fot&utm_content=44791170&gclid=59ce51ac125613cdf9c33bd5dda60918&gclsrc=3p.ds&gad_source=7&gad_campaignid=23857443108 |
+| U1 | Voltage regulator | AP2112K-3.3 | SOT-23-5 | 1 | Regulates supply down to 3.3V for the ESP32-C3 | https://www.alldatasheet.com/datasheet-pdf/pdf/1354656/DIODES/AP2112K-3.3TRG1.html |
+| J2 | USB connector | USB-C receptacle (USB 2.0, 14-pin) | USB-C SMD receptacle | 1 | Power input / charging / programming | https://www.digikey.com/en/product-highlight/c/cui/usb-type-c-connector |
+| J1 | Battery connector | 2-pin JST/header (LiPo battery) | 2.54mm pin header, 1x02 | 1 | Connects to LiPo battery pack | https://www.digikey.in/en/products/filter/headers-male-pins/314?utm_source=chatgpt.com |
+| E-ink_display1 | Display connector | 8-pin header (generic SPI e-paper) | 2.54mm pin header, 1x08 | 1 | Connects to E-ink display module | https://www.digikey.in/en/products/detail/molex/0010977086/3068123? |
+| boot1, reset1 | Push buttons | SW_Push | SMD tactile switch (SW_SPST_TL3342) | 2 | Boot mode select and reset for ESP32-C3 | https://www.digikey.com/en/products/base-product/e-switch/141/TL3342/472571 |
+| R1, R2 | Resistor | 5.1 kΩ | 0805 SMD | 2 | USB-C CC line pull-downs (configures as device) | https://www.digikey.com/en/products/detail/yageo/RC0805DR-075K1L/5918898 |
+| R3, R4, R5 | Resistor | 10 kΩ | 0805 SMD | 3 | Pull-up/pull-down resistors (boot/reset/strapping) | https://www.digikey.in/en/products/filter/chip-resistor-surface-mount/0805/52 |
+| C1, C2, C3 | Capacitor | 10 µF | 0805 SMD | 3 | Power supply decoupling/filtering | https://www.digikey.in/en/products/filter/ceramic-capacitors/62?utm_source=chatgpt.com |
 
 **Not on the PCB BOM (purchased/printed separately):**
 
-| Item | Notes |
-|---|---|
-| LiPo battery | Connects via J1; capacity depends on case size |
-| E-ink display module | Generic SPI e-paper panel, connects via 8-pin header |
+| Item | Notes | Links |
+|---|---|---|
+| LiPo battery | Connects via J1; capacity depends on case size | https://www.adafruit.com/category/574?utm_source=chatgpt.com |
+| E-ink display module | Generic SPI e-paper panel, connects via 8-pin header | https://www.waveshare.com/product/displays/e-paper/2.13inch-e-paper.htm?utm_source=chatgpt.com |
 | 3D-printed case | See `Case design/` folder for the enclosure files |
 
 ## Status
