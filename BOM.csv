@@ -1,0 +1,14 @@
+Reference Designators,Component,Value / Part Number,Footprint / Package,Quantity,Function,Link
+U3,Microcontroller,ESP32-C3-MINI-1 (Espressif),ESP32-C3-MINI-1 module,1,"Main processor, Wi-Fi/BLE, drives the E-ink display",https://documentation.espressif.com/esp32-c3-mini-1_datasheet_en.html
+U2,Battery charge controller,MCP73831T-2-OT,SOT-23-5,1,Charges the LiPo battery from USB-C,https://www.onlinecomponents.com/en/productdetail/microchip-technology/mcp73831t2aciot-44791170.html
+U1,Voltage regulator,AP2112K-3.3,SOT-23-5,1,Regulates supply down to 3.3V for the ESP32-C3,https://www.alldatasheet.com/datasheet-pdf/pdf/1354656/DIODES/AP2112K-3.3TRG1.html
+J2,USB connector,"USB-C receptacle (USB 2.0, 14-pin)",USB-C SMD receptacle,1,Power input / charging / programming,https://www.digikey.com/en/product-highlight/c/cui/usb-type-c-connector
+J1,Battery connector,2-pin JST/header (LiPo battery),"2.54mm pin header, 1x02",1,Connects to LiPo battery pack,https://www.digikey.in/en/products/filter/headers-male-pins/314
+E-ink_display1,Display connector,8-pin header (generic SPI e-paper),"2.54mm pin header, 1x08",1,Connects to E-ink display module,https://www.digikey.in/en/products/detail/molex/0010977086/3068123
+"boot1, reset1",Push buttons,SW_Push,"SMD tactile switch (SW_SPST_TL3342)",2,Boot mode select and reset for ESP32-C3,https://www.digikey.com/en/products/base-product/e-switch/141/TL3342/472571
+"R1, R2",Resistor,5.1 kOhm,0805 SMD,2,USB-C CC line pull-downs (configures as device),https://www.digikey.com/en/products/detail/yageo/RC0805DR-075K1L/5918898
+"R3, R4, R5",Resistor,10 kOhm,0805 SMD,3,Pull-up/pull-down resistors (boot/reset/strapping),https://www.digikey.in/en/products/filter/chip-resistor-surface-mount/0805/52
+"C1, C2, C3",Capacitor,10 uF,0805 SMD,3,Power supply decoupling/filtering,https://www.digikey.in/en/products/filter/ceramic-capacitors/62
+N/A,LiPo battery,Capacity depends on case size,Off-board battery,1,Connects via J1,https://www.adafruit.com/category/574
+N/A,E-ink display module,Generic SPI e-paper panel,Off-board display module,1,Connects via the 8-pin header,https://www.waveshare.com/product/displays/e-paper/2.13inch-e-paper.htm
+N/A,3D-printed case,Custom enclosure,3D-printed part,1,Holds the PCB and battery,
